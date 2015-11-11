@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+	</style>
+</head>
+<body>
+
+	<h1 id="text">Hello World</h1>
+	<button class="button">click me</button>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		//when the page is ready, do this
+		$(document).ready(function() {
+			//when the button is clicked, do this
+			$(".button").click(function() {
+				//toggle this element on and off
+				$("#text").toggle()
+			});
+		})
+	</script>
+</body>
+</html>

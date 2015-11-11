@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div {
+			width:200px;
+			height:200px;
+		}
+		.first {
+			background-color:red;
+		}
+		.second {
+			background-color:green;
+		}
+		.third {
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="first"></div>
+	<div class="second"></div>
+	<div class="third"></div>
+	<button class="button">click me</button>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		//when the page is ready, do this
+		$(document).ready(function() {
+			//when the .button element is clicked, do this
+			$(".button").click(function() {
+				//animate all div with the contained rules
+				$("div").animate({
+					left: '300px',
+					width: '500px',
+					height: '400px'
+				})
+			});
+		})
+	</script>
+</body>
+</html>

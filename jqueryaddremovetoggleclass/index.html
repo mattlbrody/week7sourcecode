@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.fonts {
+			font-size:50px;
+		}
+	</style>
+</head>
+<body>
+
+	<ol>
+		<li class="fonts">one</li>
+		<li class="fonts">two</li>
+		<li class="fonts">three</li>
+	</ol>
+	<button class="button">click me</button>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		//when the page is ready, do this
+		$(document).ready(function() {
+			//when the .button element is clicked, do this
+			$(".button").click(function() {
+				//toggle the class of fonts to all li
+				$("li").toggleClass("fonts")
+			});
+		})
+	</script>
+</body>
+</html>

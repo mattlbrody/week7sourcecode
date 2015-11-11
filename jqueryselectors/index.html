@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+	<h1 id="text">Hello World</h1>
+	<button class="button">Click Me</button>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		//when the page is ready, do this
+		$(document).ready(function() {
+			//when the button is clicked, do this
+			$(".button").click(function() {
+				//hide this element
+				$(this).hide()
+			})
+		})
+	</script>
+</body>
+</html>
